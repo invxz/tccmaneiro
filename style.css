@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(#1765DB, #0BC1E0);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 230px;
+    width: 230px;
+    background-color: white;
+    border-radius: 100%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    font-size: 28px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-cadastro {
+    height: 130px;
+    width: 130px;
+    background-color: white;
+    border-radius: 100%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    border: none;
+    text-decoration: none;
+}
+
+
+input {
+    border-radius: 5px;
+    color: black;
+    border: none;
+    margin-top: 15px;
+    height: 45px;
+    width: 300px;
+    box-shadow: 2px 2px 4px #00000060;
+    font-size: 16px;
+    letter-spacing: 1px;
+
+}
+
+.botao-login {
+    border-radius: 30px;
+    background-color: #1765DB;
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    height: 45px;
+    width: 200px;
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.text-login {
+    color: #212C4A;
+    font-size: 14px;
+}
+
+.botao-cadastro {
+    color: white;
+    text-decoration: none;
+}
+
+::placeholder {
+    color: #3568E9;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 8px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+}
+
+.sumir {
+    animation: sumir 1s alternate-reverse both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 28px;
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.animacaoinicio {
+    animation: 3s inicio both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 28px;
+}
+
+.cadastroafter {
+    animation: cadastroafter 1s both;
+}
+
+.box-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box-cadastro-dois {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sectioncadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.input-cadastro {
+    width: 150px;
+    margin: 10px;
+}
+
+.input-cadastro-baixo {
+    width: 325px;
+}
+
+.box-cadastro-baixo {
+    margin-top: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Keyframes */
+
+@keyframes inicio {
+    0% {
+        transform: scale(.7);
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+
+        transform: scale(1.);
+
+    }
+
+
+}
+
+@keyframes sumir {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes cadastroafter {
+    0% {
+        transform: translateY(100px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
